@@ -21,6 +21,8 @@ grep 'ab|bc' *.log  #支持|语法，匹配含有ab或者bc的文本行
 
 cut：从每个文件中剪出每行选定部分（由列表指定），并将它们写入标准输出
 
+top：查看进程列表
+
 diff：比较两个文件的不同
 
 ```bash
@@ -58,7 +60,14 @@ wc：统计指定文件中字节数、文字、行数，并将统计结果输出
 wc -l test.txt # 统计文件行数
 ```
 
+查找文件
 
+```bash
+find / -name a.txt
+whereis
+which
+locate
+```
 
 
 
