@@ -194,11 +194,13 @@ spop myset
 
 比如有微博文章 id 为 t1001，用户 id 为 u3001
 
-- 点赞了这条微博：sadd like:t1001 u3001
-- 取消点赞：srem like:t1001 u3001
-- 是否点赞：sismember like:t1001 u3001
-- 点赞的所有用户：smembers like:1001
-- 点赞数：scard like:t1001
+```bash
+sadd like:t1001 u3001 # 点赞了这条微博
+srem like:t1001 u3001 # - 取消点赞
+- ：sismember like:t1001 u3001 # 是否点赞
+- ：smembers like:1001 # 点赞的所有用户
+scard like:t1001 # 点赞数
+```
 
 
 
@@ -206,9 +208,11 @@ spop myset
 
 假设有商品 id 为 i5001
 
-- sadd tags:i5001 画面清晰细腻
-- sadd tags:i5001 真彩清晰显示屏
-- sadd tags:i5001 流畅至极
+```bash
+sadd tags:i5001 # 画面清晰细腻
+sadd tags:i5001 # 真彩清晰显示屏
+sadd tags:i5001 # 流畅至极
+```
 
 
 
