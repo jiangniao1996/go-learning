@@ -196,9 +196,9 @@ spop myset
 
 ```bash
 sadd like:t1001 u3001 # 点赞了这条微博
-srem like:t1001 u3001 # - 取消点赞
-- ：sismember like:t1001 u3001 # 是否点赞
-- ：smembers like:1001 # 点赞的所有用户
+srem like:t1001 u3001 # -取消点赞
+sismember like:t1001 u3001 # 是否点赞
+smembers like:1001 # 点赞的所有用户
 scard like:t1001 # 点赞数
 ```
 
